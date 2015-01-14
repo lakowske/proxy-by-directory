@@ -1,0 +1,30 @@
+{
+  "name": "proxy-by-directory",
+  "version": "0.0.1",
+  "description": "Proxy by directory routes request to web servers using url prefixes",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lakowske/proxy-by-directory.git"
+  },
+  "keywords": [
+    "proxy",
+    "directory",
+    "url",
+    "route",
+    "requests",
+    "http"
+  ],
+  "author": "Seth Lakowske <lakowske@gmail.com> (http://sethlakowske.com/)",
+  "license": "BSD-3",
+  "bugs": {
+    "url": "https://github.com/lakowske/proxy-by-directory/issues"
+  },
+  "homepage": "https://github.com/lakowske/proxy-by-directory",
+  "dependencies": {
+    "http-proxy": "^1.8.1"
+  }
+}

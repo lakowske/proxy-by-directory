@@ -31,7 +31,8 @@ module.exports = function (urls, proxy) {
 
         for (var k in matchers) {
             // for each URL matcher, try the request's URL.
-            var m = matchers[k](req.url);
+            var matcher = matchers[k];
+            var m = matcher(req.url);
             // If it's a match:
             if (m) {
                 proxy.web(req, res, m.dest);
