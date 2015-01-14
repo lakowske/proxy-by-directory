@@ -1,6 +1,6 @@
 {
   "name": "proxy-by-directory",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Proxy by directory routes request to web servers using url prefixes",
   "main": "index.js",
   "scripts": {
