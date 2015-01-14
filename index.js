@@ -35,7 +35,7 @@ module.exports = function (urls, proxy) {
             var m = matcher(req.url);
             // If it's a match:
             if (m) {
-                proxy.web(req, res, m.dest);
+                return proxy.web(req, res, m.dest);
             }
         }
 
