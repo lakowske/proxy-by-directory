@@ -4,5 +4,5 @@ Proxies requests based on the url directory (e.g. /database, /articles, etc...).
 var server = require('http').createServer(require('proxy-by-directory')({
     '/articles' : { target : 'http://localhost:5555/' },
     '/' : { target : 'http://sethlakowske.com:7777' }
-}))
+})).listen(8000)
 ```
