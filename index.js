@@ -29,6 +29,10 @@ module.exports = function (urls, proxy) {
     // This closure is returned as the request handler.
     return function (req, res) {
 
+        res.on('error', function(err) {
+            console.log('error on response to client' + err)
+        })
+        
         for (var k in matchers) {
             // for each URL matcher, try the request's URL.
             var matcher = matchers[k];
