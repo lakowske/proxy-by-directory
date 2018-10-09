@@ -39,7 +39,7 @@ module.exports = function (urls, proxy) {
             var m = matcher(req.url);
             // If it's a match:
             if (m) {
-                return proxy.web(req, res, m.dest);
+                return proxy.web(req, res, {target: m.dist});
             }
         }
 
